@@ -14,5 +14,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [{ resolve: `gatsby-theme-de-young`, options: {} }]
+  plugins: [{ resolve: `gatsby-theme-hyde`, options: {} }]
 };
