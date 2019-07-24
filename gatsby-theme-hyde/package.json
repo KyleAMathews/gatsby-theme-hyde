@@ -15,11 +15,14 @@
   "dependencies": {
     "deepmerge": "^4.0.0",
     "emotion": "^10.0.14",
+    "gatsby-plugin-layout": "^1.1.2",
     "gatsby-theme": "^0.0.5",
     "gatsby-theme-blog": "^1.0.0",
     "gray-percentage": "^2.0.0",
     "normalize.css": "^8.0.1",
     "theme-ui": "^0.2.13",
-    "typeface-alegreya-sans": "^0.0.72"
+    "typeface-abril-fatface": "^0.0.72",
+    "typeface-alegreya-sans": "^0.0.72",
+    "typeface-pt-sans": "^0.0.72"
   }
 }

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Blog Title Placeholder`,
+    title: `Gatsby Hyde`,
     author: `Name Placeholder`,
     description: `Description placeholder`,
     social: [

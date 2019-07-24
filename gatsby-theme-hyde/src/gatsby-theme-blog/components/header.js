@@ -1,62 +1,46 @@
 import React from "react";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import { css, useColorMode, Styled } from "theme-ui";
 import Switch from "gatsby-theme-blog/src/components/switch";
 import Bio from "gatsby-theme-blog/src/components/bio";
 import sun from "gatsby-theme-blog/assets/sun.png";
 import moon from "gatsby-theme-blog/assets/moon.png";
-const rootPath = `${__PATH_PREFIX__}/`;
 
-const Title = ({ children, location }) => {
-  if (location.pathname === rootPath) {
-    return (
-      <Styled.h1
+const Title = () => {
+  const data = useStaticQuery(graphql`
+    query HeaderQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `);
+  return (
+    <Styled.h1
+      css={css({
+        fontFamily: `stylized`,
+        mb: 0,
+        fontSize: 5,
+        color: `altText`
+      })}
+    >
+      <Styled.a
+        as={Link}
         css={css({
-          my: 0,
-          fontSize: 4
+          color: `altText`,
+          "&, &:active, &:visited": {
+            color: `altText`
+          },
+          boxShadow: `none`,
+          textDecoration: `none`
         })}
+        to={`/`}
       >
-        <Styled.a
-          as={Link}
-          css={css({
-            color: `primary`,
-            "&, &:active, &:visited": {
-              color: `primary`
-            },
-            boxShadow: `none`,
-            textDecoration: `none`
-          })}
-          to={`/`}
-        >
-          {children}
-        </Styled.a>
-      </Styled.h1>
-    );
-  } else {
-    return (
-      <Styled.h3
-        as="p"
-        css={css({
-          my: 0
-        })}
-      >
-        <Styled.a
-          as={Link}
-          css={css({
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `primary`,
-            "&, &:active, &:visited": {
-              color: `primary`
-            }
-          })}
-          to={`/`}
-        >
-          {children}
-        </Styled.a>
-      </Styled.h3>
-    );
-  }
+        {data.site.siteMetadata.title}
+      </Styled.a>
+    </Styled.h1>
+  );
 };
 
 const checkedIcon = (
@@ -85,7 +69,7 @@ const uncheckedIcon = (
     }}
   />
 );
-export default ({ children, title, ...props }) => {
+export default () => {
   const [colorMode, setColorMode] = useColorMode();
   const isDark = colorMode === `dark`;
 
@@ -97,10 +81,11 @@ export default ({ children, title, ...props }) => {
     <header>
       <div
         css={css({
-          maxWidth: `container`,
-          mx: `auto`,
-          px: 3,
-          pt: 4
+          position: `absolute`,
+          right: 0,
+          left: 0,
+          bottom: 0,
+          p: 4
         })}
       >
         <div
@@ -108,11 +93,10 @@ export default ({ children, title, ...props }) => {
             display: `flex`,
             justifyContent: `space-between`,
             alignItems: `baseline`,
-            mb: 4
+            mb: 2
           })}
         >
-          <Title {...props}>{title}</Title>
-          {children}
+          <Title />
           <Switch
             aria-label="Toggle dark mode"
             css={css({
@@ -124,7 +108,7 @@ export default ({ children, title, ...props }) => {
             onChange={toggleColorMode}
           />
         </div>
-        {props.location.pathname === rootPath && <Bio />}
+        <Bio />
       </div>
     </header>
   );

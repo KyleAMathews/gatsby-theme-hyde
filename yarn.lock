@@ -5376,6 +5376,13 @@ gatsby-plugin-feed@^2.3.4:
     lodash.merge "^4.6.2"
     rss "^1.2.2"
 
+gatsby-plugin-layout@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.1.2.tgz#f3f9ed8c034ebc9d3116a12ae3457f852ddf2490"
+  integrity sha512-nXtF5SJbx+qcSQBXLnpq3YeaPN0LEbkkH3HOJcoFfynzY0cKH4o09+IO3WGxoV/XLBjcxc3OxZFwBqQaeL6Keg==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-mdx@^1.0.14:
   version "1.0.15"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-mdx/-/gatsby-plugin-mdx-1.0.15.tgz#3c4d217b0624a21b16e81e26cfd09bd78488e42b"
@@ -12176,6 +12183,11 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typeface-abril-fatface@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-abril-fatface/-/typeface-abril-fatface-0.0.72.tgz#8f12b1b97e7c99617283860a97d7e2ee67f504d5"
+  integrity sha512-CaF8I80dGES7r20/bhdhRsNgvSJlbTZkcATGJxKQcl3FDMhsLXlOu0Lrk9I3BqkLXqF4O/6AeEXqI9R00k6p8g==
+
 typeface-alegreya-sans@^0.0.72:
   version "0.0.72"
   resolved "https://registry.yarnpkg.com/typeface-alegreya-sans/-/typeface-alegreya-sans-0.0.72.tgz#5b63550f60a48a99b5630ead0cbe733e3bb32c6e"
@@ -12190,6 +12202,11 @@ typeface-montserrat@0.0.75:
   version "0.0.75"
   resolved "https://registry.yarnpkg.com/typeface-montserrat/-/typeface-montserrat-0.0.75.tgz#b796d9c767ab8ed1343271985beb1e44b382b7b3"
   integrity sha512-8ski20t3hdwu2T85pVfjK4jsDbwW8yWzd+LAKxYEmu+JVLVlB7G2yfmdKZz06pUwYCLVFvHvup+NYYulHDpE+w==
+
+typeface-pt-sans@^0.0.72:
+  version "0.0.72"
+  resolved "https://registry.yarnpkg.com/typeface-pt-sans/-/typeface-pt-sans-0.0.72.tgz#c47d198510b2ed1272ad6329cf1ae5f782ebf4cf"
+  integrity sha512-eDMv72dE+0dwjIDltzZAUusF+cDgOfZKazHZK08uKCOG/BEzY6oc/WqtQLN71j5/voTXFi5M4+nXNbZnCayDMQ==
 
 typography-breakpoint-constants@^0.16.19:
   version "0.16.19"

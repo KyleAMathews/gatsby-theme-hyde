@@ -3,6 +3,7 @@ import typography from "./typography";
 import colors from "./colors";
 import styles from "./styles";
 import prism from "./prism";
+console.log(typography);
 
 export default merge.all([
   {},
@@ -11,10 +12,30 @@ export default merge.all([
     initialColorMode: `light`,
     colors,
     fonts: {
-      monospace: `"SFMono-Regular", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace`
+      monospace: `"SFMono-Regular", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace`,
+      stylized: `"Abril Fatface", serif`
     },
     sizes: {
-      container: 672
+      mobileSidebar: typography.typography.rhythm(11),
+      sidebar: typography.typography.rhythm(12),
+      container: typography.typography.rhythm(26)
+    },
+    textStyles: {
+      display: {
+        fontSize: `25px`,
+        lineHeight: `38px`,
+        color: `muted`
+      },
+      subtleLink: {
+        color: `altText`,
+        "&, &:active, &:visited": {
+          color: `altText`
+        },
+        ":hover": {
+          textDecoration: `underline`
+        },
+        textDecoration: `none`
+      }
     },
     styles,
     prism

@@ -1,5 +1,6 @@
 import gray from "gray-percentage";
 
+const backgroundDark = `#202020`;
 const brightRed = `#D94B18`;
 const brightYellow = `#F2B705`;
 const darkBlue = `#0B2559`;
@@ -7,11 +8,13 @@ const brightBlue = `#88A5BF`;
 const brightBlue30 = `hsla(208, 30%, 64%, 0.3)`;
 
 export default {
-  text: gray(10),
+  text: `#515151`,
   background: `#fff`,
-  primary: brightRed,
-  secondary: darkBlue,
-  muted: brightYellow,
+  altBackground: backgroundDark,
+  altText: gray(90, 0, true),
+  primary: `#268bd2`,
+  secondary: backgroundDark,
+  muted: `#9a9a9a`,
   highlight: brightBlue30,
   prism: {
     background: gray(96),
