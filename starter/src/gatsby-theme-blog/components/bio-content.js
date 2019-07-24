@@ -57,7 +57,7 @@ export default () => {
       </Styled.div>
       {data.site.siteMetadata.social.map(place => {
         return (
-          <Styled.div>
+          <Styled.div key={place.name}>
             <SubtleLink href={place.url}>{capitalize(place.name)}</SubtleLink>
           </Styled.div>
         );

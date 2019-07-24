@@ -3,7 +3,7 @@ import "typeface-abril-fatface";
 import { toTheme } from "@theme-ui/typography";
 
 let theme = {
-  baseFontSize: `20px`,
+  baseFontSize: `18px`,
   scaleRatio: 2.75,
   headerFontFamily: [`PT Sans`, `sans-serif`],
   bodyFontFamily: [`PT Sans`, `sans-serif`],

@@ -81,7 +81,7 @@ export default () => {
     <header>
       <div
         css={css({
-          position: `absolute`,
+          position: [`initial`, `absolute`],
           right: 0,
           left: 0,
           bottom: 0,

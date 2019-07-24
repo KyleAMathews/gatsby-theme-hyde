@@ -8,14 +8,8 @@ export default ({ children, ...props }) => (
       sx={{
         backgroundColor: `altBackground`,
         color: `altText`,
-        width: [
-          `mobileSidebar`,
-          `mobileSidebar`,
-          `mobileSidebar`,
-          `sidebar`,
-          `sidebar`
-        ],
-        position: `fixed`,
+        width: [`100%`, `mobileSidebar`, `mobileSidebar`, `sidebar`],
+        position: [`initial`, `fixed`],
         top: 0,
         left: 0,
         bottom: 0,
@@ -28,15 +22,14 @@ export default ({ children, ...props }) => (
       sx={{
         maxWidth: `container`,
         ml: [
+          0,
           t => t.sizes.mobileSidebar,
           t => t.sizes.mobileSidebar,
-          t => t.sizes.mobileSidebar,
-          t => parseInt(t.sizes.sidebar.slice(0, -2), 10) + t.space[4] + `px`,
-          t => parseInt(t.sizes.sidebar.slice(0, -2), 10) + t.space[6] + `px`
+          t => parseInt(t.sizes.sidebar.slice(0, -2), 10) + t.space[4] + `px`
         ],
-        px: 4,
-        pt: 5,
-        pb: 4
+        px: [3, 4],
+        pt: [4, 5],
+        pb: [3, 4]
       }}
     >
       {children}
