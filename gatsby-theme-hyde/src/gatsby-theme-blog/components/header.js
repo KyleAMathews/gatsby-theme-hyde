@@ -71,10 +71,26 @@ const uncheckedIcon = (
 );
 export default () => {
   const [colorMode, setColorMode] = useColorMode();
-  const isDark = colorMode === `dark`;
+  const modes = [
+    `light`,
+    `red`,
+    `orange`,
+    `yellow`,
+    `green`,
+    `blue`,
+    `purple`,
+    `brown`
+  ];
 
   const toggleColorMode = e => {
-    setColorMode(isDark ? `light` : `dark`);
+    const index = modes.indexOf(colorMode);
+    let nextItem;
+    if (index >= 0 && index < modes.length - 1) {
+      nextItem = modes[index + 1];
+    } else {
+      nextItem = modes[0];
+    }
+    setColorMode(nextItem);
   };
 
   return (
@@ -97,16 +113,23 @@ export default () => {
           })}
         >
           <Title />
-          <Switch
-            aria-label="Toggle dark mode"
+          <button
+            aria-label="Set color mode"
             css={css({
-              bg: `black`
+              bg: `altBackground`,
+              color: `altText`,
+              borderColor: `muted`,
+              borderRadius: 1,
+              fontSize: 0,
+              p: 2,
+              ml: 2,
+              cursor: `pointer`,
+              fontWeight: `bold`
             })}
-            checkedIcon={checkedIcon}
-            uncheckedIcon={uncheckedIcon}
-            checked={isDark}
-            onChange={toggleColorMode}
-          />
+            onClick={toggleColorMode}
+          >
+            {colorMode}
+          </button>
         </div>
         <Bio />
       </div>

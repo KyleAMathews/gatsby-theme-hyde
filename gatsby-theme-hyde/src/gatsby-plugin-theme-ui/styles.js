@@ -61,15 +61,16 @@ export default {
     }
   },
   a: {
-    color: `primary`,
+    color: `link`,
     "&, &:active, &:visited": {
-      color: `primary`
+      color: `link`
     }
   },
   blockquote: {
     marginLeft: [-3, 0],
     paddingLeft: 3,
-    borderLeft: theme => `${theme.space[2]}px solid ${theme.colors.muted}`
+    borderLeft: theme =>
+      `${theme.space[2]}px solid ${theme.colors.altBackground}`
   },
   "blockquote > h1, blockquote > h2, blockquote > h3, blockquote > h4": {
     marginTop: 0
