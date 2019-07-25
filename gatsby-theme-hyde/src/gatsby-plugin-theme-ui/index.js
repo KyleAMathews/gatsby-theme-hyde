@@ -11,7 +11,7 @@ export default merge.all([
     initialColorMode: `gray`,
     // Enable custom properties
     // to help avoid a flash of colors on page load
-    useCustomProperties: true,
+    // useCustomProperties: true,
     colors,
     fonts: {
       monospace: `"SFMono-Regular", Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace`,
