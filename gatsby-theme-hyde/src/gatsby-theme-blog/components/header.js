@@ -43,36 +43,10 @@ const Title = () => {
   );
 };
 
-const checkedIcon = (
-  <img
-    alt="moon indicating dark mode"
-    src={moon}
-    width="16"
-    height="16"
-    role="presentation"
-    css={{
-      pointerEvents: `none`,
-      margin: 4
-    }}
-  />
-);
-const uncheckedIcon = (
-  <img
-    alt="sun indicating light mode"
-    src={sun}
-    width="16"
-    height="16"
-    role="presentation"
-    css={{
-      pointerEvents: `none`,
-      margin: 4
-    }}
-  />
-);
 export default () => {
   const [colorMode, setColorMode] = useColorMode();
   const modes = [
-    `dark`,
+    `gray`,
     `red`,
     `orange`,
     `yellow`,

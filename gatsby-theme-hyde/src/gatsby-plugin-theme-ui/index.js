@@ -8,7 +8,7 @@ export default merge.all([
   {},
   typography,
   {
-    initialColorMode: `dark`,
+    initialColorMode: `gray`,
     // Enable custom properties
     // to help avoid a flash of colors on page load
     useCustomProperties: true,
