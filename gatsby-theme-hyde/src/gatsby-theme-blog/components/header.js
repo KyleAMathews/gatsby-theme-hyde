@@ -72,7 +72,7 @@ const uncheckedIcon = (
 export default () => {
   const [colorMode, setColorMode] = useColorMode();
   const modes = [
-    `light`,
+    `dark`,
     `red`,
     `orange`,
     `yellow`,
