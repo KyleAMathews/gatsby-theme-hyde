@@ -92,7 +92,8 @@ export default () => {
             css={css({
               bg: `altBackground`,
               color: `altText`,
-              borderColor: `muted`,
+              borderColor: `altDisplay`,
+              borderStyle: `solid`,
               borderRadius: 1,
               fontSize: 0,
               p: 2,
