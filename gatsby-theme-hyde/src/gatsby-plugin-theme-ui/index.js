@@ -26,7 +26,7 @@ export default merge.all([
       display: {
         fontSize: `25px`,
         lineHeight: `38px`,
-        color: `muted`
+        color: `altDisplay`
       },
       subtleLink: {
         color: `altText`,

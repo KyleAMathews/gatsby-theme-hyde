@@ -9,6 +9,7 @@ export default {
   background: `#fff`,
   altBackground: backgroundDark,
   altText: gray(90, 0, true),
+  altDisplay: `#9a9a9a`,
   primary: brightBlue,
   link: brightBlue,
   secondary: backgroundDark,
@@ -31,41 +32,41 @@ export default {
   modes: {
     red: {
       altBackground: `#ac4142`,
-      muted: `#290b0b`,
+      altDisplay: `#290b0b`,
       link: `#ac4142`
     },
     orange: {
       altBackground: `#AE5D1D`,
       altText: `#fff`,
-      muted: `#130901`,
+      altDisplay: `#130901`,
       link: `#AE5D1D`
     },
     yellow: {
       altBackground: `#f4bf75`,
       altText: `#44443f`,
-      muted: `#44443f`,
+      altDisplay: `#44443f`,
       link: `#946a2f`
     },
     green: {
       altBackground: `#69774A`,
-      muted: gray(5, 0),
+      altDisplay: gray(5, 0),
       altText: `#f9f9f9`,
       link: `#69774A`
     },
     blue: {
       altBackground: `#5862B5`,
-      muted: gray(5),
+      altDisplay: gray(5),
       link: `#5862B5`
     },
     purple: {
       altBackground: `#916387`,
       link: `#916387`,
-      muted: gray(0)
+      altDisplay: gray(0)
     },
     brown: {
       altBackground: `#8f5536`,
       link: `#8f5536`,
-      muted: `#000000`
+      altDisplay: `#000000`
     }
   }
 };
