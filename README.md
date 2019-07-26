@@ -18,11 +18,10 @@ gatsby develop
 
 The theme is in the `gatsby-theme-hyde` directory.
 
-The starter is in the `starter directory`
-
+The starter is in the `starter` directory.
 
 You can run the starter and develop on the theme by running:
 
 ```sh
-yarn workspace starter start
+yarn workspace starter develop
 ```
