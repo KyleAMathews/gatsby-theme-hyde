@@ -1,3 +1,5 @@
+import github from "@theme-ui/prism/presets/github.json";
+
 export default {
   root: {
     fontFamily: `body`
@@ -21,13 +23,11 @@ export default {
     color: `secondary`
   },
   pre: {
-    variant: `prism`,
+    ...github,
     fontFamily: `monospace`,
     tabSize: 4,
     hyphens: `none`,
     marginBottom: 3,
-    color: `white`,
-    bg: `prism.background`,
     p: 3,
     borderRadius: "3px",
     lineHeight: 1.42,
